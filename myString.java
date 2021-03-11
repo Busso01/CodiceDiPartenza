@@ -51,4 +51,26 @@ public class myString {
         }
         return s.pop();
     }
+
+    public String trim(String frase){
+        int i = 0, n = 0, m = 0;
+        String s = "";
+        char c = frase.charAt(i);
+        while (c == ' '){
+            n++;
+            i++;
+            c = frase.charAt(i);
+        }
+        c = frase.charAt(frase.length() - 1);
+        i = frase.length() - 1;
+        while (c == ' '){
+            i--;
+            c = frase.charAt(i);
+            m++;
+        }
+        for (int j = n; j < (frase.length() - m); j++){
+            s = s + frase.charAt(j);
+        }
+        return s;
+    }
 }

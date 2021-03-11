@@ -7,6 +7,7 @@ public class StackDemo
         String lunga = "bella";
         String corta = "uno";
         String esp = "22*";
+        String frase = " Elimina gli spazi iniziali e finali  ";
         String[] vettore= {"ciao", "bella", "uffa", "ehi"};
         s.push(10); 
         s.push(20); 
@@ -31,5 +32,7 @@ public class StackDemo
         System.out.println("s.concat = " + st.concat(vettore));
 
         System.out.println("s.calco = " + st.calco(esp));
+        System.out.println("st.trim = " + st.trim(frase));
+
     }
 }
